@@ -1,5 +1,6 @@
 const pg = require('pg');
 require('dotenv').config();
+var path = require('path');
 
 const config = {
     host: 'netflixanalysisserver.postgres.database.azure.com',
@@ -18,11 +19,10 @@ client.connect(err => {
 
 const express = require('express');
 var cors = require('cors')
-const PORT = 8000;
 
 const app = express();
-
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'public-flutter')));
 
 /* Return data for a specific person */
 app.get("/person/:type/:id", async (request, response) => {
@@ -129,6 +129,4 @@ app.get("/analysis/genres/:genre", async (request, response) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`connected at port ${PORT}`)
-})
+module.exports = app;
