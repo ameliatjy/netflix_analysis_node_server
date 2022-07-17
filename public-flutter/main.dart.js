@@ -59689,7 +59689,7 @@ A.ja.prototype={
 oi(){var s=0,r=A.a3(t.z),q,p
 var $async$oi=A.a4(function(a,b){if(a===1)return A.a0(b,r)
 while(true)switch(s){case 0:s=3
-return A.aa(A.OX(A.jQ("http://localhost:8000/actors_analysis")),$async$oi)
+return A.aa(A.OX(A.jQ("https://netflixanalysis.azurewebsites.net/actors_analysis")),$async$oi)
 case 3:p=b
 if(p.b===200){q=B.a3.kE(0,A.OW(A.OJ(p.e).c.a.i(0,"charset")).cj(0,p.w),null)
 s=1
@@ -59699,7 +59699,7 @@ return A.a2($async$oi,r)},
 oj(){var s=0,r=A.a3(t.z),q,p
 var $async$oj=A.a4(function(a,b){if(a===1)return A.a0(b,r)
 while(true)switch(s){case 0:s=3
-return A.aa(A.OX(A.jQ("http://localhost:8000/directors_analysis")),$async$oj)
+return A.aa(A.OX(A.jQ("https://netflixanalysis.azurewebsites.net/directors_analysis")),$async$oj)
 case 3:p=b
 if(p.b===200){q=B.a3.kE(0,A.OW(A.OJ(p.e).c.a.i(0,"charset")).cj(0,p.w),null)
 s=1
@@ -59709,7 +59709,7 @@ return A.a2($async$oj,r)},
 ov(a,b){var s=0,r=A.a3(t.z),q,p
 var $async$ov=A.a4(function(c,d){if(c===1)return A.a0(d,r)
 while(true)switch(s){case 0:s=3
-return A.aa(A.OX(A.jQ("http://localhost:8000/person/"+a+"/"+b)),$async$ov)
+return A.aa(A.OX(A.jQ("https://netflixanalysis.azurewebsites.net/person/"+a+"/"+b)),$async$ov)
 case 3:p=d
 if(p.b===200){q=B.a3.kE(0,A.OW(A.OJ(p.e).c.a.i(0,"charset")).cj(0,p.w),null)
 s=1
@@ -59719,7 +59719,7 @@ return A.a2($async$ov,r)},
 ol(a){var s=0,r=A.a3(t.pf),q,p,o,n,m,l
 var $async$ol=A.a4(function(b,c){if(b===1)return A.a0(c,r)
 while(true)switch(s){case 0:s=3
-return A.aa(A.OX(A.jQ("http://localhost:8000/analysis/"+a)),$async$ol)
+return A.aa(A.OX(A.jQ("https://netflixanalysis.azurewebsites.net/analysis/"+a)),$async$ol)
 case 3:l=c
 if(l.b===200){p=B.a3.kE(0,A.OW(A.OJ(l.e).c.a.i(0,"charset")).cj(0,l.w),null)
 o=A.b([],t.Wl)
@@ -59737,7 +59737,7 @@ p=0
 case 3:if(!(p<18)){s=5
 break}o=j[p]
 s=6
-return A.aa(A.OX(A.jQ("http://localhost:8000/analysis/genres/"+o)),$async$or)
+return A.aa(A.OX(A.jQ("https://netflixanalysis.azurewebsites.net/analysis/genres/"+o)),$async$or)
 case 6:n=b
 if(n.b===200){m=B.a3.kE(0,A.OW(A.OJ(n.e).c.a.i(0,"charset")).cj(0,n.w),null)
 for(l=J.a7(m),k=0;k<l.gl(m);++k)i.push(new A.ek(o,A.lB(J.ak(l.i(m,k),"total_runtime"))))}else throw A.c(u.t)
